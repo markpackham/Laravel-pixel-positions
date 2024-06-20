@@ -6,7 +6,7 @@
 
     <div class="flex-1">
 
-        <a href="#" class="self-start text-sm">Laracasts</a>
+        <a href="#" class="self-start text-sm text-gray-400">Laracasts</a>
 
         <h3>Video Producer</h3>
         <p>Full Time - $60,000</p>
