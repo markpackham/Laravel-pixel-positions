@@ -1,5 +1,14 @@
 <x-layout>
     <div class="space-y-10">
+        
+        <section class="text-center">
+            <h1 class="font-bold text-4xl">Let's Find Your Next Job</h1>
+
+            <form action="" class="mt-6">
+                <input type="text" placeholder="Web Dev" class="rounded-xl bg-white/25 border-white/10 px-5 py-4 w-full">
+            </form>
+        </section>
+
         <section>
             <x-section-heading>Featured Jobs</x-section-heading>
 
@@ -8,7 +17,6 @@
                 <x-job-card />
                 <x-job-card />
             </div>
-
         </section>
 
         <section>
