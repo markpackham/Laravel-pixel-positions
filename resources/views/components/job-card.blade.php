@@ -1,4 +1,4 @@
-<div class="p-4 bg-white/5 rounded-xl flex flex-col text-center border border-transparent hover:border-blue-600 group transition-colors duration-300">
+<x-panel class="flex flex-col text-center">
     <div class="self-start text-sm">Laracasts</div>
     <div class="py-8">
         {{-- By using "group" in the parent div we can also make the h3 and no other element turn blue on hover --}}
@@ -15,4 +15,4 @@
 
         <x-employer-logo :width="42" />
     </div>
-</div>
+</x-panel>
