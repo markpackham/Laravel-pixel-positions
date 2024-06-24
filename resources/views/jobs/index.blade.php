@@ -23,16 +23,12 @@
             <x-section-heading>Tags</x-section-heading>
 
             <div class="mt-6 space-x-1">
-                <x-tag>Tag</x-tag>
-                <x-tag>Tag</x-tag>
-                <x-tag>Tag</x-tag>
-                <x-tag>Tag</x-tag>
-                <x-tag>Tag</x-tag>
-                <x-tag>Tag</x-tag>
-                <x-tag>Tag</x-tag>
-                <x-tag>Tag</x-tag>
-                <x-tag>Tag</x-tag>
-                <x-tag>Tag</x-tag>
+
+             @foreach ($tags as $tag)
+             {{-- Shorthand for :tag="$tag" when names are identical just like in Vue.js --}}
+             <x-tag :$tag />
+             @endforeach
+             
             </div>
         </section>
 
