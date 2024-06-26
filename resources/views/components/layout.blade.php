@@ -29,7 +29,7 @@
                 <a href="#">Companies</a>
             </div>
 
-            {{-- @auth --}}
+            @auth
             <div class="space-x-6 font-bold flex">
                 <a href="/jobs/create">Post a Job</a>
 
@@ -40,7 +40,7 @@
                     <button>Log Out</button>
                 </form>
             </div>
-            {{-- @endauth --}}
+            @endauth
 
             @guest
             <div class="space-x-6 font-bold">
