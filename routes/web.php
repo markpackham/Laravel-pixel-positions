@@ -9,6 +9,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [JobController::class, 'index']);
 
+Route::get('/jobs/create', [JobController::class, 'create'])->middleware('auth');
+Route::post('/jobs', [JobController::class, 'store'])->middleware('auth');
+
 Route::get('/search', SearchController::class);
 // We have to specify "name" since Laravel looks by default for the id instead
 Route::get('/tags/{tag:name}', TagController::class);
