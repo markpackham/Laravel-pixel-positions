@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 
 class TagController extends Controller
 {
-    public function __invoke()
+    // Using route model binding to ask for tag
+    public function __invoke(Tag $tag)
     {
-        $tags = Tag::where('title', 'LIKE', '%' . request('q') . '%')->get();
-
-        return view('results', ['tags' => $tags]);
+        // Show all jobs associated with a tag
+        return view('results', ['jobs' => $tag->jobs]);
     }
 }

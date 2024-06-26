@@ -10,7 +10,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [JobController::class, 'index']);
 
 Route::get('/search', SearchController::class);
-Route::get('/tags/{tag}', TagController::class);
+// We have to specify "name" since Laravel looks by default for the id instead
+Route::get('/tags/{tag:name}', TagController::class);
 
 // Guest Only
 Route::middleware('guest')->group(function () {
