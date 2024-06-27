@@ -16,6 +16,7 @@ class JobController extends Controller
      */
     public function index()
     {
+        // Always use "with()" and eager load rather than lazy load to avoid n+1 performance issue
         $jobs = Job::latest()->with(['employer', 'tags'])->get()->groupBy('featured');
 
         return view('jobs.index', [
